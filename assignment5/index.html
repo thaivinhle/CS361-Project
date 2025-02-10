@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-    <meta charset='utf-8'/>
-    <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
     <title>Todo</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='script.js' defer></script>
-</head>
-
-<body>
+  </head>
+  <body>
     <section class="todo">
-        <h2>To-do List</h2>
-        <div class="input">
-            <input type="text" class="input-field" id="todoInput" placeholder="Add a new Todo">
-        </div>
-        <ul class="scroll">
-            <li id="todoList"></li>
-        </ul>
-        <div>
-            <hr class="Counter"/>
-            <div class="counter-container">
-                <p><span>0</span> Items Total:</p>
-                <button id="deleteButton">Delete All</button>
-            </div>
-        </div>
+      <h2>To-do list</h2>
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="Add a new todo"
+        />
         <button class="btn">Add</button>
+      </div>
+      <ul class="scroll">
+        <li id="todoList"></li>
+      </ul>
+      <div>
+        <hr class="counter" />
+        <div class="counter-container">
+          <p><span id="todoCount">0</span> items total</p>
+          <button id="deleteButton">Delete All</button>
+        </div>
+      </div>
     </section>
     <footer>
-        <div class="footer">
-            <p class="made by">Made By</p>
-            <p class="author">Thai Le</p>
-        </div>
+      <div class="footer">
+        <p class="made-by">Made By</p>
+        <p class="author">Thai Le</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
